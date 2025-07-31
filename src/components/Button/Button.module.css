@@ -1,0 +1,14 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 16px;
+    border-radius: 12px;
+    background-color: #EB0C0C;
+    height: 48px;
+    color: white;
+}
+
+.button:hover {
+    background-color: #C30000;
+}

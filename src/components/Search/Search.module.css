@@ -1,0 +1,19 @@
+.search_center {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+    width: 100%;
+}
+
+.search_left{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 32px;
+    width: 100%;
+}
