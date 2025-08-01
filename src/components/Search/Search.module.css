@@ -1,3 +1,10 @@
+.search_container {
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
 .search_center {
     display: flex;
     flex-direction: row;
@@ -5,6 +12,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 32px;
+    margin-top: 32px;
     width: 100%;
 }
 
@@ -15,5 +23,6 @@
     justify-content: start;
     align-items: center;
     margin-bottom: 32px;
+    margin-top: 32px;
     width: 100%;
 }

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import styles from "./PhotoModal.module.css";
+import CloseIcon from "../../assets/Close.svg";
 
 interface PhotoModalProps {
   urls: {
@@ -19,12 +20,10 @@ const PhotoModal = ({ urls, alt, onClose }: PhotoModalProps) => {
     };
 
     window.addEventListener("keydown", handleKeyDown);
-
     document.body.style.overflow = "hidden";
 
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
-
       document.body.style.overflow = "";
     };
   }, [onClose]);
@@ -45,7 +44,7 @@ const PhotoModal = ({ urls, alt, onClose }: PhotoModalProps) => {
           onClick={onClose}
           aria-label="Close"
         >
-          &times;
+          <img src={CloseIcon} alt="Close" className={styles.closeIcon} />
         </button>
         <img
           src={imageUrl}

@@ -7,6 +7,10 @@
     background-color: #EB0C0C;
     height: 48px;
     color: white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .button:hover {

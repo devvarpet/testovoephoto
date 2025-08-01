@@ -13,16 +13,18 @@ const Search = ({ position = "center" }: { position?: "left" | "center" }) => {
     position === "left" ? styles.search_left : styles.search_center;
 
   return (
-    <div className={searchPosition}>
-      <Input />
-      <Button
-        title={"Искать"}
-        onclick={() => {
-          dispatch(resetData());
-          dispatch(setInputReq(input));
-        }}
-      />
-    </div>
+    <section className={styles.search_container}>
+      <div className={searchPosition}>
+        <Input />
+        <Button
+          title={"Искать"}
+          onclick={() => {
+            dispatch(resetData());
+            dispatch(setInputReq(input));
+          }}
+        />
+      </div>
+    </section>
   );
 };
 
