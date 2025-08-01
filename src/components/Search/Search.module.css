@@ -1,9 +1,8 @@
 .search_container {
     width: 100%;
     background-color: white;
-    position: fixed;
+    position: sticky;
     top: 0;
-    box-sizing: border-box;
 }
 
 .search_center {
@@ -12,6 +11,8 @@
     gap: 8px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 32px;
+    margin-top: 32px;
     width: 100%;
 }
 
@@ -21,5 +22,7 @@
     gap: 8px;
     justify-content: start;
     align-items: center;
+    margin-bottom: 32px;
+    margin-top: 32px;
     width: 100%;
 }
